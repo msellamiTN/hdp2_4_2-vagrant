@@ -120,7 +120,6 @@ SCRIPT
       vb.memory = "2048"
     end
   end
-
   # Slave2
   config.vm.define :slave2 do |s2|
     s2.vm.hostname = "slave2.mycluster"
@@ -129,8 +128,7 @@ SCRIPT
       vb.memory = "2048"
     end
   end
-end
- # Slave2
+ # Slave3
   config.vm.define :slave3 do |s3|
     s2.vm.hostname = "slave3.mycluster"
     s2.vm.network :private_network, ip: "192.168.0.23"
@@ -138,8 +136,7 @@ end
       vb.memory = "2048"
     end
   end
-end
- # Slave2
+ # Slave4
   config.vm.define :slave4 do |s4|
     s2.vm.hostname = "slave4.mycluster"
     s2.vm.network :private_network, ip: "192.168.0.24"
