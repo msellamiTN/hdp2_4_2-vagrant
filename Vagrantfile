@@ -94,7 +94,7 @@ SCRIPT
   # Ambari1
   config.vm.define :ambari1 do |a1|
     a1.vm.hostname = "ambari1.mycluster"
-    a1.vm.network :private_network, ip: "192.168.0.11"
+    a1.vm.network :public_network, ip: "145.239.29.225"
     a1.vm.provider :virtualbox do |vb|
       vb.memory = "3048"
     end
@@ -106,7 +106,7 @@ SCRIPT
   # Master1
   config.vm.define :master1 do |m1|
     m1.vm.hostname = "master1.mycluster"
-    m1.vm.network :private_network, ip: "192.168.0.12"
+    m1.vm.network :private_network, ip: "145.239.29.226"
     m1.vm.provider :virtualbox do |vb|
       vb.memory = "4096"
     end
@@ -115,7 +115,7 @@ SCRIPT
   # Slave1
   config.vm.define :slave1 do |s1|
     s1.vm.hostname = "slave1.mycluster"
-    s1.vm.network :private_network, ip: "192.168.0.21"
+    s1.vm.network :private_network, ip: "145.239.29.227"
     s1.vm.provider :virtualbox do |vb|
       vb.memory = "2048"
     end
@@ -123,7 +123,7 @@ SCRIPT
   # Slave2
   config.vm.define :slave2 do |s2|
     s2.vm.hostname = "slave2.mycluster"
-    s2.vm.network :private_network, ip: "192.168.0.22"
+    s2.vm.network :private_network, ip: "145.239.29.228"
     s2.vm.provider :virtualbox do |vb|
       vb.memory = "2048"
     end
@@ -131,7 +131,7 @@ SCRIPT
  # Slave3
   config.vm.define :slave3 do |s3|
     s2.vm.hostname = "slave3.mycluster"
-    s2.vm.network :private_network, ip: "192.168.0.23"
+    s2.vm.network :private_network, ip: "145.239.29.229"
     s2.vm.provider :virtualbox do |vb|
       vb.memory = "2048"
     end
@@ -139,7 +139,7 @@ SCRIPT
  # Slave4
   config.vm.define :slave4 do |s4|
     s2.vm.hostname = "slave4.mycluster"
-    s2.vm.network :private_network, ip: "192.168.0.24"
+    s2.vm.network :private_network, ip: "145.239.29.230"
     s2.vm.provider :virtualbox do |vb|
       vb.memory = "2048"
     end
