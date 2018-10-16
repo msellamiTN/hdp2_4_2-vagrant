@@ -94,13 +94,13 @@ SCRIPT
   # Ambari1
   config.vm.define :ambari1 do |a1|
     a1.vm.hostname = "ambari1.mycluster"
-    a1.vm.network :public_network, ip: "145.239.29.225"
+    a1.vm.network "public_network", ip:  "145.239.29.225"
     a1.vm.provider :virtualbox do |vb|
       vb.memory = "3048"
     end
 
-    a1.vm.network "forwarded_port", guest: 8080, host: 8080
-    a1.vm.network "forwarded_port", guest: 80, host: 8081
+    a1.vm.network "forwarded_port", guest: 8080, host: 8089
+    a1.vm.network "forwarded_port", guest: 80, host: 8082
   end
 
   # Master1
